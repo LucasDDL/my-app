@@ -4,4 +4,101 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(#121212,#212b46);
+  
+}
+
+.title{
+  color: rgb(241, 9, 67);
+  font-size: 65px;
+  animation: FlipTitle 2s;
+  font-family: system-ui, sans-serif;
+  
+}
+
+@keyframes FlipTitle {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateY(0deg);    
+  }
+}
+
+.containerImput{
+  background-color: rgba(99, 96, 25, 0.1);
+  padding: 15px;
+  margin: 36px, 1;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0,0,0, 0.5);
+  display: flex;
+  
+}
+.containerImput input{
+  background-color: transparent;
+  color:rgb(140, 81, 173);
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  margin-right: 7px;
+}
+.containerImput input::placeholder{
+  color: rgb(140, 81, 173);
+}
+.buttonsearch{
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  
+  
+}
+
+.buttonsearch:hover{
+  transform: scale(1.3);
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(134, 173, 165);
+  width: 500px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 3px 5px rgba(0,0,0, 0.5);
+
+}
+
+.main h2{
+  margin: 16px 0;
+  font-size: 32px;
+  
+}
+
+.main span{
+  margin: 16px 0;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 715px){
+  .title{
+    font-size: 60px;
+  }
+  .main{
+    font-size: 28px;
+  }
+  .main{
+    width: 80%;
+    min-height: 250px;
+  }
+
 }
